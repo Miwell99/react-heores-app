@@ -9,7 +9,7 @@ export const HeroCard = ({
     characters,
 }) => {
     return (
-        <div className="card ms-3 " style={{ maxWidth: 400 }}>
+        <div className="card m-3" style={{ maxWidth: 400 }}>
             <div className="row no-gutters">
                 <div className="col-md-4">
                     <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />

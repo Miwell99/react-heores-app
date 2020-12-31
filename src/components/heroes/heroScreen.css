@@ -1,0 +1,6 @@
+.cards-container{
+    display: block;
+}
+.card{
+    float:left;
+}
