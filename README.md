@@ -1,3 +1,11 @@
+#Wellcome!
+
+This is the repository of an SPA app developed by Miguel González Bravo (miguelinformatica01@gmail.com).
+This app has the objective to show the React and other Front skills from Miguel.
+
+This app has been built following the online curse: [React de cero a experto] (https://www.udemy.com/course/react-cero-experto/) from Fernando Herrera.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
