@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Redirect, useParams } from 'react-router-dom';
 import { getHeroById } from '../../selectors/getHeroById';
 
-export const HeroScreen = ({history}) => {
+export const HeroScreen = ({ history }) => {
 
     const { heroeId } = useParams();     // Custom Hook from react router
-    const hero = getHeroById(heroeId);
+    //const hero = getHeroById(heroeId);
+    const hero = useMemo(() => getHeroById(heroeId), [heroeId])
 
-    // hero check.
+    // Hero validation.
     if (!hero) {
         return <Redirect to="/" />
     }
@@ -21,10 +22,10 @@ export const HeroScreen = ({history}) => {
     } = hero;
 
     const handleGoBack = () => {
-        if(history.lenght<2){
+        if (history.lenght < 2) {
             // Evade logout
             history.push('/');
-        }else{
+        } else {
             history.goBack();
         }
     }
