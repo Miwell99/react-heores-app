@@ -1,4 +1,4 @@
-#Wellcome!
+# Wellcome!
 
 This is the repository of an SPA app developed by Miguel González Bravo (miguelinformatica01@gmail.com).
 This app has the objective to show the React and other Front skills from Miguel.
