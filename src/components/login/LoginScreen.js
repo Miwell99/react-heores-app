@@ -17,6 +17,7 @@ export const LoginScreen = ({ history }) => {
             }
         }
         dispatch(action);
+        history.replace('/');
     }
     return (
         <div className="container m-5">

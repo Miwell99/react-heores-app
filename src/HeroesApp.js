@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useEffect, useReducer } from 'react';
 
 import { AppRouter } from './routers/AppRouter';
 
@@ -14,8 +14,14 @@ export const HeroesApp = () => {
     const [user, dispatch] = useReducer(authReducer, {}, init);
     // Now we can obtain the user on every part of the app, because is storaged on AppContext (using localStorage)
 
+    // Remember user after reload.
+    useEffect(() => {
+        localStorage.setItem('user',JSON.stringify(user));
+    }, [user]);
+
+
     return (
-        <AuthContext.Provider value={ {user, dispatch} }>
+        <AuthContext.Provider value={{ user, dispatch }}>
             <AppRouter />
         </AuthContext.Provider>
     )
