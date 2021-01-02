@@ -1,7 +1,6 @@
-import React, { useMemo } from 'react';
+import { useMemo } from 'react';
 import queryString from 'query-string';
 
-import { heroes } from '../../data/heroes';
 import { useLocation } from 'react-router-dom';
 import { useForm } from '../../hooks/useForm';
 import { HeroCard } from '../heroes/HeroCard';
@@ -80,13 +79,13 @@ export const SearchScreen = ({ history }) => {
                     }
 
                     {
-                    result.map(hero => (
-                        <HeroCard
-                            key={hero.id}
-                            {...hero}
-                        />
-                    ))
-                }
+                        result.map(hero => (
+                            <HeroCard
+                                key={hero.id}
+                                {...hero}
+                            />
+                        ))
+                    }
             </div>
         </div>
 

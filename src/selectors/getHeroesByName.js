@@ -1,6 +1,4 @@
-import React from 'react';
 import { heroes } from '../data/heroes';
-
 
 export const getHeroesByName = (name) => {
 
