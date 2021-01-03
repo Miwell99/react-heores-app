@@ -3,9 +3,9 @@ import { Redirect, Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 /**
- * To protect Routes only for logged users.
+ * To prevent the use case of a user login again without logout before.
  */
-export const PrivateRoute = ({
+export const PublicRoute = ({
     isAuthenticated,
     component: Component,
     ...rest
@@ -13,9 +13,9 @@ export const PrivateRoute = ({
     return (
         <Route {...rest}
             component={(props) => (
-                (isAuthenticated)
+                (!isAuthenticated)
                     ? (<Component {...props} />)
-                    : (<Redirect to="/login" />)
+                    : (<Redirect to="/" />)
 
             )}
         />
@@ -23,7 +23,7 @@ export const PrivateRoute = ({
 }
 
 // Argument Validation Required
-PrivateRoute.propTypes = {
+PublicRoute.propTypes = {
     isAuthenticated: PropTypes.bool.isRequired,
     component: PropTypes.func.isRequired
 }
