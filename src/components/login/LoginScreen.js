@@ -10,6 +10,8 @@ export const LoginScreen = ({ history }) => {
         // history.push('/')  // ! No sustituye la historia y se podria navegar hacia atrás estando deslogeado
         // history.replace('/');    // Sustituye la historia, para evitar cargar paginas antiguas al dar atras sin estar logeado.
 
+        const lastPath = localStorage.getItem('lastPath') || '/';   // To remember last route!
+
         const action = {
             type: types.login,
             payload: {
@@ -17,7 +19,7 @@ export const LoginScreen = ({ history }) => {
             }
         }
         dispatch(action);
-        history.replace('/');
+        history.replace(lastPath);      
     }
     return (
         <div className="container m-5">
