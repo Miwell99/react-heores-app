@@ -27,7 +27,7 @@ export const SearchScreen = ({ history }) => {
 
     return (
         <div>
-            <h1>SearchScreen</h1>
+            <h1 className="text-center p-2">SearchScreen</h1>
             <hr />
 
             <div className="row">
@@ -35,7 +35,7 @@ export const SearchScreen = ({ history }) => {
                     <h4>Search Form</h4>
                     <hr />
 
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} >
                         <input
                             name="searchInput"
                             type="text"

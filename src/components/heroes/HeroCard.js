@@ -9,18 +9,18 @@ export const HeroCard = ({
     characters,
 }) => {
     return (
-        <div className="card m-3" style={{ maxWidth: 400 }}>
-            <div className="row no-gutters">
-                <div className="col-md-4">
+        <div className="card" style={{ maxWidth: 400 }}>
+            <div className="row ">
+                <div className="col-md-6">
                     <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
                 </div>
-                <div className="col-md-8">
+                <div className="col-md-6">
                     <div className="card-body">
                         <h5 className="card-title">{superhero}</h5>
                         <p className="card-text">{alter_ego}</p>
                         {
-                            (alter_ego!==characters)
-                                && <p className="card-text">{characters}</p>
+                            (alter_ego!==characters) 
+                                && <p className="card-text">{characters.substring(0,30)+'...'}</p>
                         }
                         <p className="card-text">
                             <small className="text-muted">{first_appearance}</small>

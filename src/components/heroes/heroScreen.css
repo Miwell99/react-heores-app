@@ -1,6 +1,9 @@
 .cards-container{
-    display: block;
+    margin: 10px;
 }
 .card{
     float:left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
 }
