@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { AuthContext } from '../../auth/AuthContext'
 import { types } from '../../types/types';
+import { PageTitle } from '../ui/PageTitle';
 
 export const LoginScreen = ({ history }) => {
 
@@ -19,12 +20,12 @@ export const LoginScreen = ({ history }) => {
             }
         }
         dispatch(action);
-        history.replace(lastPath);      
+        history.replace(lastPath);
     }
     return (
         <div className="container m-5">
-            <h1>Login</h1>
-            <hr />
+            <PageTitle title="Login" />
+
             <button
                 className="btn btn-primary"
                 onClick={handleLogin}

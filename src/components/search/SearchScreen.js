@@ -6,6 +6,7 @@ import { useForm } from '../../hooks/useForm';
 import { HeroCard } from '../heroes/HeroCard';
 
 import { getHeroesByName } from '../../selectors/getHeroesByName';
+import { PageTitle } from '../ui/PageTitle';
 
 export const SearchScreen = ({ history }) => {
 
@@ -27,8 +28,7 @@ export const SearchScreen = ({ history }) => {
 
     return (
         <div>
-            <h1 className="text-center p-2">SearchScreen</h1>
-            <hr />
+            <PageTitle title="Search Screen"/>
 
             <div className="row">
                 <div className="col-5">
