@@ -27,8 +27,8 @@ export const SearchScreen = ({ history }) => {
     }
 
     return (
-        <div>
-            <PageTitle title="Search Screen"/>
+        <>
+            <PageTitle title="Search Screen" />
 
             <div className="row">
                 <div className="col-5">
@@ -86,9 +86,9 @@ export const SearchScreen = ({ history }) => {
                             />
                         ))
                     }
+                </div>
             </div>
-        </div>
 
-        </div >
+        </ >
     )
 }

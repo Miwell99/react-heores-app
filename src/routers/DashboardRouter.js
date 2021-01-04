@@ -7,11 +7,12 @@ import { HeroScreen } from '../components/heroes/HeroScreen';
 import { MarvelScreen } from '../components/marvel/MarvelScreen';
 import { DcScreen } from '../components/dc/DcScreen';
 import { SearchScreen } from '../components/search/SearchScreen';
+import { Footer } from '../components/ui/Footer';
 
 export const DashboardRouter = () => {
     return (
         <>
-            <Navbar></Navbar>
+            <Navbar/>
             <div className="container mt-2">
                 <Switch>
                     <Route exact path="/marvel" component={MarvelScreen} />
@@ -21,6 +22,7 @@ export const DashboardRouter = () => {
                     <Redirect to="/marvel" />
                 </Switch>
             </div>
+            <Footer/>
 
         </>
     )
