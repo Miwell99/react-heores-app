@@ -9,7 +9,8 @@
     "static/js/2.223a4976.chunk.js.map": "/static/js/2.223a4976.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.0e46f6fa.chunk.css.map": "/static/css/main.0e46f6fa.chunk.css.map",
-    "static/js/2.223a4976.chunk.js.LICENSE.txt": "/static/js/2.223a4976.chunk.js.LICENSE.txt"
+    "static/js/2.223a4976.chunk.js.LICENSE.txt": "/static/js/2.223a4976.chunk.js.LICENSE.txt",
+    "assets/heroes/dc-arrow.jpg": "/assets/heroes/dc-arrow.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0bb5a477.js",
