@@ -30,11 +30,13 @@ export const HeroScreen = ({ history }) => {
         }
     }
 
+    const appName = 'react-heores-app'  // For assets on github pages.
+
     return (
         <div className="row mt-5">
             <div className="col-4">
                 <img
-                    src={`../assets/heroes/${heroeId}.jpg`}
+                    src={`../${appName}/heroes/${heroeId}.jpg`}
                     alt={superhero}
                     className="img-thumbnail animate__animated animate__fadeInLeftBig"
                 />
