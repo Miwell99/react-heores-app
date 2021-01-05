@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react'
 import { getHeroesByPublisher } from '../../selectors/getHeroesByPublisher'
 import { HeroCard } from './HeroCard';
-import './heroScreen.css';
+import './styles/css/heroScreen.css';
 
 export const HeroList = ({ publisher }) => {
 
