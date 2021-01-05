@@ -8,11 +8,14 @@ export const HeroCard = ({
     first_appearance,
     characters,
 }) => {
+
+    const appName = 'react-heores-app'  // For assets on github pages.
     return (
         <div className="card" style={{ maxWidth: 400 }}>
             <div className="row ">
                 <div className="col-md-6">
-                    <img src={`../assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
+                
+                    <img src={`../${appName}/assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
                 </div>
                 <div className="col-md-6">
                     <div className="card-body">
