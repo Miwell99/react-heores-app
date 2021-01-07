@@ -15,6 +15,7 @@ export const LoginScreen = ({ history }) => {
     const { username } = formValues;
 
     const handleLogin = () => {
+        if(!username==""){
         // history.push('/')  // ! No sustituye la historia y se podria navegar hacia atrás estando deslogeado
         // history.replace('/');    // Sustituye la historia, para evitar cargar paginas antiguas al dar atras sin estar logeado.
 
@@ -28,14 +29,18 @@ export const LoginScreen = ({ history }) => {
         }
         dispatch(action);
         history.replace(lastPath);
+        }
+
     }
 
     return (
         <div className="container">
-            <PageTitle title="Please sign in" />
+            <PageTitle title="Sign In" />
             <br></br>
-            <div className=" row d-flx justify-content-center">
+            <div className="row d-flx justify-content-center">
                 <div className="formContent col-md-3">
+                <small className="m-1">Please choose a username to continue</small>
+
                     <form>
                         <label for="inputName" className="m-1 sr-only">Username</label>
                         <input

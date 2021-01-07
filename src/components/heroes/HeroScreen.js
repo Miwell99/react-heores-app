@@ -36,15 +36,16 @@ export const HeroScreen = ({ history }) => {
         <div className="row mt-5">
             <div className="col-4">
                 {/* Production assets */}
-                {/* <img
+                <img
                     src={`../${appName}/assets/heroes/${heroeId}.jpg`}
                     alt={superhero}
                     className="img-thumbnail animate__animated animate__fadeInLeftBig"
-                /> */}
+                />
                 {/* Local assets */}
-                <img src={`../assets/heroes/${heroeId}.jpg`}
+                {/* <img src={`../assets/heroes/${heroeId}.jpg`}
                     className="img-thumbnail animate__animated animate__fadeInLeftBig"
-                    alt={superhero} />
+                    alt={superhero}
+                /> */}
 
             </div>
             <div className="col-8 animate__animated animate__fadeIn">

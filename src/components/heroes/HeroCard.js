@@ -15,12 +15,12 @@ export const HeroCard = ({
             <div className="row ">
                 <div className="col-md-6">
                     {/* Production assets */}
-                    {/*                 
+
                     <img src={`../${appName}/assets/heroes/${id}.jpg`}
                         className="card-img" alt={superhero}
-                    /> */}
+                    />
                     {/* // Local assets */}
-                    <img src={`../assets/heroes/${id}.jpg`} className="card-img" alt={superhero} />
+                    {/* <img src={`../assets/heroes/${id}.jpg`} className="card-img" alt={superhero} /> */}
                 </div>
                 <div className="col-md-6">
                     <div className="card-body">
