@@ -10,6 +10,7 @@ This app has been built following the online curse: [React de cero a experto](ht
 - Re-usage of components.
 - Usage of cookies.
 - Usage of an App Context to access global data.
+- remembers the last user view
 
 # Tips:
 - There is no backend yet so don't worry for your data when login. It its saved as cookies.
