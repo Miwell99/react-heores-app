@@ -15,23 +15,26 @@ export const LoginScreen = ({ history }) => {
     const { username } = formValues;
 
     const handleLogin = () => {
-        if(!username==""){
-        // history.push('/')  // ! No sustituye la historia y se podria navegar hacia atrás estando deslogeado
-        // history.replace('/');    // Sustituye la historia, para evitar cargar paginas antiguas al dar atras sin estar logeado.
+        if (username === '') {
+            // username not valid
+        } else {
+            // history.push('/')  // ! No sustituye la historia y se podria navegar hacia atrás estando deslogeado
+            // history.replace('/');    // Sustituye la historia, para evitar cargar paginas antiguas al dar atras sin estar logeado.
 
-        const lastPath = localStorage.getItem('lastPath') || '/';   // To remember last route!
+            const lastPath = localStorage.getItem('lastPath') || '/';   // To remember last route!
 
-        const action = {
-            type: types.login,
-            payload: {
-                name: username,
+            const action = {
+                type: types.login,
+                payload: {
+                    name: username,
+                }
             }
+            dispatch(action);
+            history.replace(lastPath);
         }
-        dispatch(action);
-        history.replace(lastPath);
-        }
-
     }
+
+
 
     return (
         <div className="container">
@@ -39,17 +42,16 @@ export const LoginScreen = ({ history }) => {
             <br></br>
             <div className="row d-flx justify-content-center">
                 <div className="formContent col-md-3">
-                <small className="m-1">Please choose a username to continue</small>
+                    <small className="m-1">Please choose a username to continue</small>
 
                     <form>
-                        <label for="inputName" className="m-1 sr-only">Username</label>
+                        <label htmlFor="inputName" className="m-1 sr-only">Username</label>
                         <input
                             type="text"
                             name="username"
                             className="form-control m-1"
                             placeholder="Your Username"
                             required
-                            autofocus
                             autoComplete="off"
                             value={username}
                             onChange={handleInputChange}
