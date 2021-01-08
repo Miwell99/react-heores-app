@@ -18,3 +18,5 @@ This app has been built following the [online curse](https://www.udemy.com/cours
 - There is no backend yet so don't worry for your data when login. It its saved as cookies.
 - You can search by 'green' to obtain more than one character by name on search view. It search by name of superheroes only.
 
+# Code versions
+- React version 17
