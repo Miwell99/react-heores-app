@@ -4,6 +4,7 @@ This is the repository of a SPA app developed by Miguel González Bravo (migueli
 This app has been built following the [online curse](https://www.udemy.com/course/react-cero-experto/) from Udemy e-learning, adding some more code by me. The App is about show, filter and navigate throught Super Heroes from DC Comics & Marvel. Enjoy!
 
 # Front Skills:
+- Responsive View for mobile, tablet and desktop screen
 - JavaScript ES6.
 - Route protection for no logged users (if doesn't logged in, can't navigate to /marvel page f.e.).
 - React Hooks (and custom Hooks).
